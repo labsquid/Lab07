@@ -1,0 +1,27 @@
+<!ELEMENT bookings (booking+)>
+
+<!ELEMENT booking (type,room, ((day,timeslot)|(day, course)|(timeslot,course)))>
+
+<!ELEMENT type EMPTY>
+<!ATTLIST type
+    type (Lab|Lecture) #REQUIRED
+  >
+<!ELEMENT room EMPTY>
+<!ATTLIST room
+    room CDATA #REQUIRED
+  > 
+  
+<!ELEMENT day EMPTY>
+<!ATTLIST day
+    day (Monday | Tuesday | Wednesday | Thursday | Friday) #REQUIRED
+  > 
+  
+<!ELEMENT course EMPTY>
+<!ATTLIST course
+    course CDATA #REQUIRED
+> 
+  
+<!ELEMENT timeslot EMPTY>
+<!ATTLIST timeslot
+    time CDATA #REQUIRED
+ > 
