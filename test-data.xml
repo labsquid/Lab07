@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE bookings SYSTEM "NewFile.dtd">
-<bookings>
-	<booking>
-		<type type="Lab"/>
-		<room room="3060"/>
-		<timeslot time="10:30"/>
-		<course course="ACIT4650"/>
-	</booking>
+<!DOCTYPE timetable SYSTEM "NewFile.dtd">
+<timetable>
+	<day day='Monday'>
+		<booking>
+			<type type="Lab"/>
+			<room room="3060"/>
+			<timeslot time="10:30"/>
+			<course course="ACIT4650"/>
+		</booking>
+	</day>
 	
-</bookings>
+	<timeslot time='ACIT4650'>
+		<booking>
+			<type type="Lab"/>
+			<room room="3060"/>
+			<course course="ACIT4650"/>
+			<day day="Tuesday"/>
+		</booking>
+	</timeslot>
+	
+	<course course='ACIT4650'>
+		<booking>
+			<type type="Lab"/>
+			<room room="3060"/>
+			<timeslot time="10:30"/>
+			<day day="Tuesday"/>
+		</booking>
+	</course>
+	
+</timetable>
