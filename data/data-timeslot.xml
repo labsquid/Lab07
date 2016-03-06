@@ -5,6 +5,7 @@
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
+                        <day day="Friday"/>
 			<course course="ACIT4660"/>
 		</booking>
 	</timeslot>
@@ -12,11 +13,13 @@
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW5-1840"/>
-			<course course="ACIT4910"/>
+			<day day="Thursday"/>
+                        <course course="ACIT4910"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
+                        <day day="Friday"/>
 			<course course="ACIT4660"/>
 		</booking>
 	</timeslot>
@@ -24,21 +27,25 @@
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
+                        <day day="Tuesday"/>
 			<course course="ACIT4620"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
+                        <day day="Wednesday"/>
 			<course course="ACIT4660"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
+                        <day day="Friday"/>
 			<course course="ACIT4660"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-320"/>
+                        <day day="Thursday"/>
 			<course course="ACIT4850"/>
 		</booking>
 	</timeslot>
@@ -46,16 +53,19 @@
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
+                        <day day="Tuesday"/>
 			<course course="ACIT4620"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
+                        <day day="Wednesday"/>
 			<course course="ACIT4660"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-320"/>
+                        <day day="Thursday"/>
 			<course course="ACIT4850"/>
 		</booking>
 	</timeslot>
@@ -63,11 +73,13 @@
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
+                        <day day="Tuesday"/>
 			<course course="ACIT4650"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW3-1750"/>
+                        <day day="Wednesday"/>
 			<course course="ACIT4850"/>
 		</booking>
 	</timeslot>
@@ -75,26 +87,26 @@
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
+                        <day day="Monday"/>
 			<course course="ACIT4770"/>
 		</booking>
-		<booking>
-			<type type="Lecture"/>
-			<room room="SW9-206"/>
-			<course course="ACIT4910"/>
-		</booking>
+		
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
+                        <day day="Tuesday"/>
 			<course course="ACIT4650"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW3-1750"/>
+                        <day day="Wednesday"/>
 			<course course="ACIT4850"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
+                        <day day="Thursday"/>
 			<course course="ACIT4910"/>
 		</booking>
 	</timeslot>
@@ -102,11 +114,13 @@
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
+                        <day day="Tuesday"/>
 			<course course="ACIT4650"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
+                        <day day="Thursday"/>
 			<course course="ACIT4910"/>
 		</booking>
 	</timeslot>
@@ -114,13 +128,21 @@
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW3-3615"/>
+                        <day day="Tuesday"/>
 			<course course="ACIT4620"/>
 		</booking>		
+                <booking>
+			<type type="Lecture"/>
+			<room room="SW9-206"/>
+                        <day day="Monday"/>
+			<course course="ACIT4910"/>
+		</booking>
 	</timeslot>
 	<timeslot time="16:30">
 		<booking>
 			<type type="Lecture"/>
 			<room room="SE6-205"/>
+                        <day day="Monday"/>
 			<course course="ACIT4650"/>
 		</booking>
 	</timeslot>
