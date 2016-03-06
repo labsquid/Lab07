@@ -7,24 +7,28 @@
 			<room room="SW5-1840"/>
 			<day day='Monday'/>
 			<timeslot time="13:30"/>
+			<teacher teacher="Richard Chau"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW5-1840"/>
 			<day day='Thursday'/>
 			<timeslot time="9:30"/>
+			<teacher teacher="Richard Chau"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
 			<day day='Thursday'/>
 			<timeslot time="13:30"/>
+			<teacher teacher="Richard Chau"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
 			<day day='Thursday'/>
 			<timeslot time="14:30"/>
+			<teacher teacher="Richard Chau"/>
 		</booking>
 	</course>
         
@@ -34,6 +38,7 @@
 			<room room="SE12-306"/>
 			<day day='Monday'/>
 			<timeslot time="13:30"/>
+			<teacher teacher="Trevor Lord"/>
 		</booking>
 	</course>
 	<course course = "ACIT4650">
@@ -42,24 +47,28 @@
 			<room room="SE6-205"/>
 			<day day='Monday'/>
 			<timeslot time="16:30"/>
+			<teacher teacher="Medhat Elmasry"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SE6-205"/>
 			<day day = 'Tuesday'/>
 			<timeslot time="16:30"/>
+			<teacher teacher="Medhat Elmasry"/>
 		</booking>
         <booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
 			<day day = 'Tuesday'/>
 			<timeslot time="12:30"/>
+			<teacher teacher="Medhat Elmasry"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
 			<day day = 'Tuesday'/>
 			<timeslot time="14:30"/>
+			<teacher teacher="Medhat Elmasry"/>
 		</booking>		
 	</course>
 	<course course = "ACIT4620">
@@ -68,18 +77,21 @@
 			<room room="SE12-306"/>
 			<day day = 'Tuesday'/>
 			<timeslot time="10:30"/>
+			<teacher teacher="Bethany Edmunds"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
 			<day day = 'Tuesday'/>
 			<timeslot time="11:30"/>
+			<teacher teacher="Bethany Edmunds"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW3-3615"/>
 			<day day = 'Tuesday'/>
 			<timeslot time="15:30"/>
+			<teacher teacher="Bethany Edmunds"/>
 		</booking>
 	</course>
 	<course course="ACIT4660">
@@ -88,6 +100,7 @@
 			<room room="SE12-306"/>
 			<day day = 'Wednesday'/>
 			<timeslot time="10:30"/>
+			<teacher teacher="Stephen Fabiszewski"/>
 		</booking>
 		
 		<booking>
@@ -95,24 +108,28 @@
 			<room room="SE12-306"/>
 			<day day = 'Wednesday'/>
 			<timeslot time="11:30"/>
+			<teacher teacher="Stephen Fabiszewski"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
 			<day day = 'Friday'/>
 			<timeslot time="8:30"/>
+			<teacher teacher="Stephen Fabiszewski"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
 			<day day = 'Friday'/>
 			<timeslot time="9:30"/>
+			<teacher teacher="Stephen Fabiszewski"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
 			<day day = 'Friday'/>
 			<timeslot time="10:30"/>
+			<teacher teacher="Stephen Fabiszewski"/>
 		</booking>
 	</course>
 	<course course="ACIT4850">
@@ -121,24 +138,28 @@
 			<room room="SW3-1750"/>
 			<day day = 'Wednesday'/>
 			<timeslot time="12:30"/>
+			<teacher teacher="James Parry"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW3-1750"/>
 			<day day = 'Wednesday'/>
 			<timeslot time="13:30"/>
+			<teacher teacher="James Parry"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-320"/>
 			<day day = 'Thursday'/>
 			<timeslot time="10:30"/>
+			<teacher teacher="James Parry"/>
 		</booking>	
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-320"/>
 			<day day = 'Thursday'/>
 			<timeslot time="11:30"/>
+			<teacher teacher="James Parry"/>
 		</booking>
 	</course>
 </timetable>
