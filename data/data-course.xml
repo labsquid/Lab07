@@ -6,32 +6,33 @@
 			<type type="Lecture"/>
 			<room room="SW5-1840"/>
 			<day day='Monday'/>
-			<timeslot time="9:30"/>
+			<timeslot time="13:30"/>
 		</booking>
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW5-1840"/>
-			<day = 'Thursday'/>
+			<day day='Thursday'/>
 			<timeslot time="9:30"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
-			<day = 'Thursday'/>
+			<day day='Thursday'/>
 			<timeslot time="13:30"/>
 		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
-			<day = 'Thursday'/>
+			<day day='Thursday'/>
 			<timeslot time="14:30"/>
 		</booking>
 	</course>
+        
 	<course course = "ACIT4770">
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
-			<day = 'Monday'/>
+			<day day='Monday'/>
 			<timeslot time="13:30"/>
 		</booking>
 	</course>
@@ -39,7 +40,7 @@
 		<booking>
 			<type type="Lecture"/>
 			<room room="SE6-205"/>
-			<day day = 'Monday'/>
+			<day day='Monday'/>
 			<timeslot time="16:30"/>
 		</booking>
 		<booking>
@@ -48,6 +49,7 @@
 			<day day = 'Tuesday'/>
 			<timeslot time="16:30"/>
 		</booking>
+        <booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
 			<day day = 'Tuesday'/>
