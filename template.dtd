@@ -1,6 +1,6 @@
 <!ELEMENT timetable ((day|timeslot|course)+)>
 
-<!ELEMENT booking (type,room, day*, course*, timeslot*)>
+<!ELEMENT booking (type,room,((day, course)|(day, timeslot)|(course, timeslot)))>
 
 <!ELEMENT type EMPTY>
 <!ATTLIST type
@@ -10,18 +10,18 @@
 <!ELEMENT room EMPTY>
 <!ATTLIST room
     room CDATA #REQUIRED
-> 
-  
+>
+
 <!ELEMENT day (booking*)>
 <!ATTLIST day
     day (Monday | Tuesday | Wednesday | Thursday | Friday) #REQUIRED
-> 
-  
+>
+
 <!ELEMENT course (booking*)>
 <!ATTLIST course
     course CDATA #REQUIRED
-> 
-  
+>
+
 <!ELEMENT timeslot (booking*)>
 <!ATTLIST timeslot
     time CDATA #REQUIRED
