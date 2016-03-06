@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE timetable SYSTEM "template.dtd">
+<timetable>
+	<timeslot time="8:30">
+		<booking>
+			<type type="Lecture"/>
+			<room room="SW9-206"/>
+			<course course="ACIT4660"/>
+		</booking>
+	</timeslot>
+	<timeslot time="9:30">
+		<booking>
+			<type type="Lecture"/>
+			<room room="SW5-1840"/>
+			<course course="ACIT4910"/>
+		</booking>
+		<booking>
+			<type type="Lecture"/>
+			<room room="SW9-206"/>
+			<course course="ACIT4660"/>
+		</booking>
+	</timeslot>
+	<timeslot time="10:30">
+		<booking>
+			<type type="Lab"/>
+			<room room="SE12-306"/>
+			<course course="ACIT4620"/>
+		</booking>
+		<booking>
+			<type type="Lab"/>
+			<room room="SE12-306"/>
+			<course course="ACIT4660"/>
+		</booking>
+		<booking>
+			<type type="Lecture"/>
+			<room room="SW9-206"/>
+			<course course="ACIT4660"/>
+		</booking>
+		<booking>
+			<type type="Lab"/>
+			<room room="SE12-320"/>
+			<course course="ACIT4850"/>
+		</booking>
+	</timeslot>
+	<timeslot time="11:30">
+		<booking>
+			<type type="Lab"/>
+			<room room="SE12-306"/>
+			<course course="ACIT4620"/>
+		</booking>
+		<booking>
+			<type type="Lab"/>
+			<room room="SE12-306"/>
+			<course course="ACIT4660"/>
+		</booking>
+		<booking>
+			<type type="Lab"/>
+			<room room="SE12-320"/>
+			<course course="ACIT4850"/>
+		</booking>
+	</timeslot>
+	<timeslot time="12:30">
+		<booking>
+			<type type="Lecture"/>
+			<room room="SW9-206"/>
+			<course course="ACIT4650"/>
+		</booking>
+		<booking>
+			<type type="Lecture"/>
+			<room room="SW3-1750"/>
+			<course course="ACIT4850"/>
+		</booking>
+	</timeslot>
+	<timeslot time="13:30">
+		<booking>
+			<type type="Lab"/>
+			<room room="SE12-306"/>
+			<course course="ACIT4770"/>
+		</booking>
+		<booking>
+			<type type="Lecture"/>
+			<room room="SW9-206"/>
+			<course course="ACIT4910"/>
+		</booking>
+		<booking>
+			<type type="Lab"/>
+			<room room="SE12-306"/>
+			<course course="ACIT4650"/>
+		</booking>
+		<booking>
+			<type type="Lecture"/>
+			<room room="SW3-1750"/>
+			<course course="ACIT4850"/>
+		</booking>
+		<booking>
+			<type type="Lab"/>
+			<room room="SE12-306"/>
+			<course course="ACIT4910"/>
+		</booking>
+	</timeslot>
+	<timeslot time="14:30">
+		<booking>
+			<type type="Lab"/>
+			<room room="SE12-306"/>
+			<course course="ACIT4650"/>
+		</booking>
+		<booking>
+			<type type="Lab"/>
+			<room room="SE12-306"/>
+			<course course="ACIT4910"/>
+		</booking>
+	</timeslot>
+	<timeslot time="15:30">
+		<booking>
+			<type type="Lecture"/>
+			<room room="SW3-3615"/>
+			<course course="ACIT4620"/>
+		</booking>		
+	</timeslot>
+	<timeslot time="16:30">
+		<booking>
+			<type type="Lecture"/>
+			<room room="SE6-205"/>
+			<course course="ACIT4650"/>
+		</booking>
+	</timeslot>
+	<timeslot time="17:30">
+	</timeslot>
+</timetable>
