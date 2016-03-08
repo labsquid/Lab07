@@ -5,7 +5,7 @@
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
-            <day day="Friday"/>
+                        <day day="Friday"/>
 			<course course="ACIT4660"/>
 			<teacher teacher="Stephen Fabiszewski"/>
 		</booking>
@@ -15,7 +15,7 @@
 			<type type="Lecture"/>
 			<room room="SW5-1840"/>
 			<day day="Thursday"/>
-            <course course="ACIT4910"/>
+                        <course course="ACIT4910"/>
 			<teacher teacher="Richard Chau"/>
 		</booking>
 		<booking>

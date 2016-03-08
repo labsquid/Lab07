@@ -1,10 +1,15 @@
 <!ELEMENT timetable ((day|timeslot|course)+)>
 
-<!ELEMENT booking (type,room,((day, course)|(day, timeslot)|(course, timeslot)))>
+<!ELEMENT booking (type,room,((day, course)|(day, timeslot)|(course, timeslot)),teacher)>
 
 <!ELEMENT type EMPTY>
 <!ATTLIST type
     type (Lab|Lecture) #REQUIRED
+>
+
+<!ELEMENT teacher EMPTY>
+<!ATTLIST teacher
+    teacher CDATA #REQUIRED
 >
 
 <!ELEMENT room EMPTY>
