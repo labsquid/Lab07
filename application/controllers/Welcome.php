@@ -23,6 +23,6 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 		$this->load->model('timetable');
 		$data = $this->timetable->getAll();
-		print_r($data);
+		print_r($data[0]);
 	}
 }
