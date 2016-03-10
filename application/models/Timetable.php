@@ -1,11 +1,60 @@
 <?php 
 
 class Timetable extends CI_Model {
-	protected $xml = null;
-	protected $days = array();
-	protected $courses = array();
-	protected $timeslots = array();
+	public $xml = null;
+	public $days = array();
+	public $courses = array();
+	public $timeslots = array();
 	
+	public function __construct(){
+		$this->xml = simplexml_load_file("./data/data-all.xml");
+		foreach($this->xml->days->day as $day){
+			$dayName = $day['day']->__toString();
+			foreach($day->booking as $booking){
+				$tempBooking = new Booking();
+				$tempBooking->day = $dayName;
+				$tempBooking->course = $booking->course['course']->__toString();
+				$tempBooking->timeslot = $booking->timeslot['time']->__toString();
+				$tempBooking->teacher = $booking->teacher['teacher']->__toString();
+				$tempBooking->type = $booking->type['type']->__toString();
+				$tempBooking->room = $booking->room['room']->__toString();
+				$this->days[] = $tempBooking;
+			}
+		}
+		foreach($this->xml->days->day as $day){
+			$dayName = $day['day']->__toString();
+			foreach($day->booking as $booking){
+				$tempBooking = new Booking();
+				$tempBooking->day = $dayName;
+				$tempBooking->course = $booking->course['course']->__toString();
+				$tempBooking->timeslot = $booking->timeslot['time']->__toString();
+				$tempBooking->teacher = $booking->teacher['teacher']->__toString();
+				$tempBooking->type = $booking->type['type']->__toString();
+				$tempBooking->room = $booking->room['room']->__toString();
+				$this->days[] = $tempBooking;
+			}
+		}
+		foreach($this->xml->days->day as $day){
+			$dayName = $day['day']->__toString();
+			foreach($day->booking as $booking){
+				$tempBooking = new Booking();
+				$tempBooking->day = $dayName;
+				$tempBooking->course = $booking->course['course']->__toString();
+				$tempBooking->timeslot = $booking->timeslot['time']->__toString();
+				$tempBooking->teacher = $booking->teacher['teacher']->__toString();
+				$tempBooking->type = $booking->type['type']->__toString();
+				$tempBooking->room = $booking->room['room']->__toString();
+				$this->days[] = $tempBooking;
+			}
+		}
+		
+	}
+	public function getAll(){
+		return $this->days;
+	}
+
+	
+		
 }
 
 class Booking {
@@ -16,34 +65,7 @@ class Booking {
 	public $type;
 	public $room;
 	
-	//provided with <day> or <course> or <timeslot>
-	__construct($element){
-	if($element->getName() == "day" || $element->getName() == "course" || $element->getName() == "timeslot"){
-		$this->$type = $element->booking->type["type"];
-		$this->$teacher = $element->booking->teacher["teacher"];
-		$this->$room = $element->booking->room["room"];
-		
-		if($element->getName() == "day"){
-			$this->day = $element['day'];
-			$this->course = $element->course['course'];
-			$this->timeslot = $element->timeslot['timeslot'];			
-		}
-		else if($element->getName() == "course"){
-			$this->course = $element['course'];
-			$this->day = $element->day['day'];
-			$this->timeslot = $element->timeslot['timeslot'];			
-		}
-		
-		else if($element->getName() == "timeslot"){
-			$this->timeslot = $element['timeslot'];
-			$this->day = $element->day['day'];
-			$this->timeslot = $element->timeslot['timeslot'];			
-		}
-		else{
-			return;
-		}
-		
+    public function __contruct(){		
 	}
+	
 }
-
-?>

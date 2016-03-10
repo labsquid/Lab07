@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE timetable SYSTEM "template.dtd">
+<timetable>
+	<days>
+		<day day='Monday'>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<course course="ACIT4770"/>
+				<timeslot time="13:30"/>
+							<teacher teacher="Trevor Lord"/>
+			</booking>
+			
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<course course="ACIT4910"/>
+				<timeslot time="15:30"/>
+							<teacher teacher="Richard Chau"/>
+			</booking>
+			
+			<booking>
+				<type type="Lecture"/>
+				<room room="SE6-205"/>
+				<course course="ACIT4650"/>
+				<timeslot time="16:30"/>
+							<teacher teacher="Medhat Elmasry"/>
+			</booking>
+		</day>
+		
+		<day day='Tuesday'>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<course course="ACIT4620"/>
+				<timeslot time="10:30"/>
+							<teacher teacher="Bethany Edmunds"/>
+			</booking>
+			
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<course course="ACIT4620"/>
+				<timeslot time="11:30"/>
+							<teacher teacher="Bethany Edmunds"/>
+			</booking>
+			
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<course course="ACIT4650"/>
+				<timeslot time="12:30"/>
+							<teacher teacher="Medhat Elmasry"/>
+			</booking>
+			
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<course course="ACIT4650"/>
+				<timeslot time="13:30"/>
+							<teacher teacher="Medhat Elmasry"/>
+			</booking>
+			
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<course course="ACIT4650"/>
+				<timeslot time="14:30"/>
+							<teacher teacher="Medhat Elmasry"/>
+			</booking>
+			
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW3-3615"/>
+				<course course="ACIT4620"/>
+				<timeslot time="15:30"/>
+							<teacher teacher="Bethany Edmunds"/>
+			</booking>
+		</day>
+		<day day='Wednesday'>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<course course="ACIT4660"/>
+				<timeslot time="10:30"/>
+							<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+			
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<course course="ACIT4660"/>
+				<timeslot time="11:30"/>
+							<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+			
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW3-1750"/>
+				<course course="ACIT4850"/>
+				<timeslot time="12:30"/>
+							<teacher teacher="James Parry"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW3-1750"/>
+				<course course="ACIT4850"/>
+				<timeslot time="13:30"/>
+							<teacher teacher="James Parry"/>
+			</booking>
+		</day>
+		<day day='Thursday'>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW5-1840"/>
+				<course course="ACIT4910"/>
+				<timeslot time="9:30"/>
+							<teacher teacher="Richard Chau"/>
+			</booking>
+			
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-320"/>
+				<course course="ACIT4850"/>
+				<timeslot time="10:30"/>
+							<teacher teacher="James Parry"/>
+			</booking>
+			
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-320"/>
+				<course course="ACIT4850"/>
+				<timeslot time="11:30"/>
+							<teacher teacher="James Parry"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<course course="ACIT4910"/>
+				<timeslot time="13:30"/>
+							<teacher teacher="Richard Chau"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<course course="ACIT4910"/>
+				<timeslot time="14:30"/>
+							<teacher teacher="Richard Chau"/>
+			</booking>
+		</day>
+		<day day='Friday'>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<course course="ACIT4660"/>
+				<timeslot time="8:30"/>
+							<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<course course="ACIT4660"/>
+				<timeslot time="9:30"/>
+							<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<course course="ACIT4660"/>
+				<timeslot time="10:30"/>
+							<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+		</day>
+	</days>
+
+	<courses>
+		<course course="ACIT4910">
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW5-1840"/>
+				<day day='Monday'/>
+				<timeslot time="13:30"/>
+				<teacher teacher="Richard Chau"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW5-1840"/>
+				<day day='Thursday'/>
+				<timeslot time="9:30"/>
+				<teacher teacher="Richard Chau"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day='Thursday'/>
+				<timeslot time="13:30"/>
+				<teacher teacher="Richard Chau"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day='Thursday'/>
+				<timeslot time="14:30"/>
+				<teacher teacher="Richard Chau"/>
+			</booking>
+		</course>
+			
+		<course course = "ACIT4770">
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day='Monday'/>
+				<timeslot time="13:30"/>
+				<teacher teacher="Trevor Lord"/>
+			</booking>
+		</course>
+		<course course = "ACIT4650">
+			<booking>
+				<type type="Lecture"/>
+				<room room="SE6-205"/>
+				<day day='Monday'/>
+				<timeslot time="16:30"/>
+				<teacher teacher="Medhat Elmasry"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SE6-205"/>
+				<day day = 'Tuesday'/>
+				<timeslot time="16:30"/>
+				<teacher teacher="Medhat Elmasry"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<day day = 'Tuesday'/>
+				<timeslot time="12:30"/>
+				<teacher teacher="Medhat Elmasry"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day = 'Tuesday'/>
+				<timeslot time="14:30"/>
+				<teacher teacher="Medhat Elmasry"/>
+			</booking>		
+		</course>
+		<course course = "ACIT4620">
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day = 'Tuesday'/>
+				<timeslot time="10:30"/>
+				<teacher teacher="Bethany Edmunds"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day = 'Tuesday'/>
+				<timeslot time="11:30"/>
+				<teacher teacher="Bethany Edmunds"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW3-3615"/>
+				<day day = 'Tuesday'/>
+				<timeslot time="15:30"/>
+				<teacher teacher="Bethany Edmunds"/>
+			</booking>
+		</course>
+		<course course="ACIT4660">
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day = 'Wednesday'/>
+				<timeslot time="10:30"/>
+				<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+			
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day = 'Wednesday'/>
+				<timeslot time="11:30"/>
+				<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<day day = 'Friday'/>
+				<timeslot time="8:30"/>
+				<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<day day = 'Friday'/>
+				<timeslot time="9:30"/>
+				<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<day day = 'Friday'/>
+				<timeslot time="10:30"/>
+				<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+		</course>
+		<course course="ACIT4850">
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW3-1750"/>
+				<day day = 'Wednesday'/>
+				<timeslot time="12:30"/>
+				<teacher teacher="James Parry"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW3-1750"/>
+				<day day = 'Wednesday'/>
+				<timeslot time="13:30"/>
+				<teacher teacher="James Parry"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-320"/>
+				<day day = 'Thursday'/>
+				<timeslot time="10:30"/>
+				<teacher teacher="James Parry"/>
+			</booking>	
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-320"/>
+				<day day = 'Thursday'/>
+				<timeslot time="11:30"/>
+				<teacher teacher="James Parry"/>
+			</booking>
+		</course>
+	</courses>
+	<timeslots>
+		<timeslot time="8:30">
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+							<day day="Friday"/>
+				<course course="ACIT4660"/>
+				<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+		</timeslot>
+		<timeslot time="9:30">
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW5-1840"/>
+				<day day="Thursday"/>
+							<course course="ACIT4910"/>
+				<teacher teacher="Richard Chau"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<day day="Friday"/>
+				<course course="ACIT4660"/>
+				<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+		</timeslot>
+		<timeslot time="10:30">
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day="Tuesday"/>
+				<course course="ACIT4620"/>
+				<teacher teacher="Bethany Edmunds"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day="Wednesday"/>
+				<course course="ACIT4660"/>
+				<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<day day="Friday"/>
+				<course course="ACIT4660"/>
+				<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-320"/>
+				<day day="Thursday"/>
+				<course course="ACIT4850"/>
+				<teacher teacher="James Parry"/>
+			</booking>
+		</timeslot>
+		<timeslot time="11:30">
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day="Tuesday"/>
+				<course course="ACIT4620"/>
+				<teacher teacher="Bethany Edmunds"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day="Wednesday"/>
+				<course course="ACIT4660"/>
+				<teacher teacher="Stephen Fabiszewski"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-320"/>
+				<day day="Thursday"/>
+				<course course="ACIT4850"/>
+				<teacher teacher="James Parry"/>
+			</booking>
+		</timeslot>
+		<timeslot time="12:30">
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<day day="Tuesday"/>
+				<course course="ACIT4650"/>
+				<teacher teacher="Medhat Elmasry"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW3-1750"/>
+				<day day="Wednesday"/>
+				<course course="ACIT4850"/>
+				<teacher teacher="James Parry"/>
+			</booking>
+		</timeslot>
+		<timeslot time="13:30">
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day="Monday"/>
+				<course course="ACIT4770"/>
+				<teacher teacher="Trevor Lord"/>
+			</booking>
+			
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day="Tuesday"/>
+				<course course="ACIT4650"/>
+				<teacher teacher="Medhat Elmasry"/>
+			</booking>
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW3-1750"/>
+				<day day="Wednesday"/>
+				<course course="ACIT4850"/>
+				<teacher teacher="James Parry"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day="Thursday"/>
+				<course course="ACIT4910"/>
+				<teacher teacher="Richard Chau"/>
+			</booking>
+		</timeslot>
+		<timeslot time="14:30">
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day="Tuesday"/>
+				<course course="ACIT4650"/>
+				<teacher teacher="Medhat Elmasry"/>
+			</booking>
+			<booking>
+				<type type="Lab"/>
+				<room room="SE12-306"/>
+				<day day="Thursday"/>
+				<course course="ACIT4910"/>
+				<teacher teacher="Richard Chau"/>
+			</booking>
+		</timeslot>
+		<timeslot time="15:30">
+			<booking>
+				<type type="Lecture"/>
+				<room room="SW3-3615"/>
+				<day day="Tuesday"/>
+				<course course="ACIT4620"/>
+				<teacher teacher="Bethany Edmunds"/>
+			</booking>		
+					<booking>
+				<type type="Lecture"/>
+				<room room="SW9-206"/>
+				<day day="Monday"/>
+				<course course="ACIT4910"/>
+				<teacher teacher="Richard Chau"/>
+			</booking>
+		</timeslot>
+		<timeslot time="16:30">
+			<booking>
+				<type type="Lecture"/>
+				<room room="SE6-205"/>
+				<day day="Monday"/>
+				<course course="ACIT4650"/>
+				<teacher teacher="Medhat Elmasry"/>
+			</booking>
+		</timeslot>
+		<timeslot time="17:30">
+		</timeslot>
+	</timeslots>
+</timetable>
