@@ -6,9 +6,21 @@ class Timetable extends CI_Model {
 	protected $courses = array();
 	protected $timeslots = array();
 	
-}
+	public function __construct(){
+		$this->xml = simplexml_load_file("./data/data-all.xml");
+		
+		foreach($this->xml->days->day->booking as $booking){
+			$this->days[] = new Booking($this, $this->xpath("parent::*"));
+		}
+	}
+	public function getAll(){
+		return $days;
+	}
+	
+		
+	}
 
-class Booking {
+public class Booking {
 	public $day;
 	public $course;
 	public $timeslot;
@@ -16,34 +28,33 @@ class Booking {
 	public $type;
 	public $room;
 	
-	//provided with <day> or <course> or <timeslot>
-	__construct($element){
-	if($element->getName() == "day" || $element->getName() == "course" || $element->getName() == "timeslot"){
-		$this->$type = $element->booking->type["type"];
-		$this->$teacher = $element->booking->teacher["teacher"];
-		$this->$room = $element->booking->room["room"];
-		
-		if($element->getName() == "day"){
-			$this->day = $element['day'];
-			$this->course = $element->course['course'];
-			$this->timeslot = $element->timeslot['timeslot'];			
-		}
-		else if($element->getName() == "course"){
-			$this->course = $element['course'];
-			$this->day = $element->day['day'];
-			$this->timeslot = $element->timeslot['timeslot'];			
-		}
-		
-		else if($element->getName() == "timeslot"){
-			$this->timeslot = $element['timeslot'];
-			$this->day = $element->day['day'];
-			$this->timeslot = $element->timeslot['timeslot'];			
-		}
-		else{
-			return;
-		}
-		
-	}
+	//provided with the <booking> and either <day>, <course> or <timeslot> as parent element
+	public function __construct($element, $parentElement){
+	
+		if($parentElement->getName() == "day" || $parentElement->getName() == "course" || $parentElement->getName() == "timeslot"){
+			$this->$type = $element->type["type"];
+			$this->$teacher = $element->teacher["teacher"];
+			$this->$room = $element->room["room"];
+			
+			if($parentElement->getName() == "day"){
+				$this->day = $parentElement['day'];
+				$this->course = $element->course['course'];
+				$this->timeslot = $element->timeslot['timeslot'];			
+			}
+			else if($parentElement->getName() == "course"){
+				$this->course = $parentElement['course'];
+				$this->day = $element->day['day'];
+				$this->timeslot = $element->timeslot['timeslot'];			
+			}
+			
+			else if($parentElement->getName() == "timeslot"){
+				$this->timeslot = $parentElement['timeslot'];
+				$this->day = $element->day['day'];
+				$this->timeslot = $element->timeslot['timeslot'];			
+			}
+			else{
+				return;
+			}
+			
+			}
 }
-
-?>
