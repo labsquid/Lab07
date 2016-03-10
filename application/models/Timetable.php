@@ -21,36 +21,37 @@ class Timetable extends CI_Model {
 				$this->days[] = $tempBooking;
 			}
 		}
-		foreach($this->xml->days->day as $day){
-			$dayName = $day['day']->__toString();
-			foreach($day->booking as $booking){
+		foreach($this->xml->courses->course as $course){
+			$courseName = $course['course']->__toString();
+			foreach($course->booking as $booking){
 				$tempBooking = new Booking();
-				$tempBooking->day = $dayName;
-				$tempBooking->course = $booking->course['course']->__toString();
+				$tempBooking->day = $booking->day['day']->__toString();
+				$tempBooking->course = $courseName;
 				$tempBooking->timeslot = $booking->timeslot['time']->__toString();
 				$tempBooking->teacher = $booking->teacher['teacher']->__toString();
 				$tempBooking->type = $booking->type['type']->__toString();
 				$tempBooking->room = $booking->room['room']->__toString();
-				$this->days[] = $tempBooking;
+				$this->courses[] = $tempBooking;
 			}
 		}
-		foreach($this->xml->days->day as $day){
-			$dayName = $day['day']->__toString();
-			foreach($day->booking as $booking){
+		
+		foreach($this->xml->timeslots->timeslot as $timeslot){
+			$timeslotName = $timeslot['time']->__toString();
+			foreach($timeslot->booking as $booking){
 				$tempBooking = new Booking();
-				$tempBooking->day = $dayName;
+				$tempBooking->timeslot = $timeslotName;
 				$tempBooking->course = $booking->course['course']->__toString();
-				$tempBooking->timeslot = $booking->timeslot['time']->__toString();
+				$tempBooking->day = $booking->day['day']->__toString();
 				$tempBooking->teacher = $booking->teacher['teacher']->__toString();
 				$tempBooking->type = $booking->type['type']->__toString();
 				$tempBooking->room = $booking->room['room']->__toString();
-				$this->days[] = $tempBooking;
+				$this->timeslots[] = $tempBooking;
 			}
 		}
 		
 	}
 	public function getAll(){
-		return $this->days;
+		return $this->courses;
 	}
 
 	
