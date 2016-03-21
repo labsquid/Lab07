@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 class Timetable extends CI_Model {
 	public $xml = null;
 	public $days = array();
 	public $courses = array();
 	public $timeslots = array();
-	
+
 	public function __construct(){
 		$this->xml = simplexml_load_file("./data/data-all.xml");
 		foreach($this->xml->days->day as $day){
@@ -34,7 +34,7 @@ class Timetable extends CI_Model {
 				$this->courses[] = $tempBooking;
 			}
 		}
-		
+
 		foreach($this->xml->timeslots->timeslot as $timeslot){
 			$timeslotName = $timeslot['time']->__toString();
 			foreach($timeslot->booking as $booking){
@@ -48,14 +48,36 @@ class Timetable extends CI_Model {
 				$this->timeslots[] = $tempBooking;
 			}
 		}
-		
+
 	}
-	public function getAll(){
+	public function getCourses(){
 		return $this->courses;
 	}
 
-	
-		
+	public function getTimeslots(){
+		return $this->timeslots;
+	}
+
+	public function getDropdownTimeslots(){
+		$return;
+		foreach($this->timeslots as $booking){
+			$return[$booking->timeslot] = $booking->timeslot;
+		}
+		return $return;
+	}
+
+	public function getDays(){
+		return $this->days;
+	}
+
+	public function getDropdownDays(){
+		$return;
+		foreach($this->days as $booking){
+			$return[$booking->day] = $booking->day;
+		}
+		return $return;
+	}
+
 }
 
 class Booking {
@@ -65,8 +87,12 @@ class Booking {
 	public $teacher;
 	public $type;
 	public $room;
-	
-    public function __contruct(){		
+
+    public function __contruct(){
 	}
-	
+
+	public function toString(){
+		return "Course: " . $this->course . " at " . $this->timeslot . " on " . $this->day . " taught by " . $this->teacher . " is a " . $this->type . " in room " . $this->room;
+	}
+
 }
