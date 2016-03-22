@@ -75,21 +75,47 @@ class Welcome extends Application {
 				$courseResult .= "<div>" . $item->toString() . "</div>";
 			}
 		}
+		
+		
 
 		//At this point, just need to do some comparisons and decide whether to
 		//print a single one (because they all match) or each invidually like/
 		//Course results are ___ day results are __ etc
 		// OR just show an error for no results
+		
+		
 
 
 		//Currently just checks and displays course results
-		if($courseResult == ""){
+		if($courseResult == "" && $dayResult == "" && $timeslotResult == ""){
 			$courseResult = "<div>Sorry, there are no results for that day and timeslot.</div>";
-		}
-		$display .= $courseResult;
-		$display .= "</div>";
-
-		$this->data['xmldata'] = $display;
-		$this->render();
+			
+			$display .= $courseResult;
+			$display .= "</div>";
+			
+			$this->data['xmldata'] = $display;
+			$this->render();
+		} elseif ($dayResult != $courseResult || $dayResult != $timeslotResult){
+			$dayResult = "<div><b>Day Result:</b> " . $dayResult . "</div>";
+			$courseResult = "<div><b>Course Result:</b> " . $courseResult . "</div>";
+			$timeslotResult = "<div><b>Timeslot Result:</b> " . $timeslotResult . "</div>";
+			$display .= $courseResult;
+			$display .= $dayResult;
+			$display .= $timeslotResult;
+			
+			$display .= "</div>";
+			
+			$this->data['xmldata'] = $display;
+			$this->render();
+		} else {		
+			$display .= $courseResult;		
+			$display .= "</div>";			
+			$this->data['xmldata'] = $display;
+			$this->render();
+		};
+		
+		
+		
+	
 	}
 }
