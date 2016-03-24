@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE timetable SYSTEM "template.dtd">
 <timetable>
 	<timeslot time="8:30">
 		<booking>
@@ -102,7 +101,7 @@
             <day day="Monday"/>
 			<course course="ACIT4770"/>
 			<teacher teacher="Trevor Lord"/>
-		</booking>		
+		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
@@ -148,7 +147,7 @@
             <day day="Tuesday"/>
 			<course course="ACIT4620"/>
 			<teacher teacher="Bethany Edmunds"/>
-		</booking>		
+		</booking>
                 <booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>

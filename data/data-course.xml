@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE timetable SYSTEM "template.dtd">
-<timetable>
+<timetable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="template.xsd">
 	<course course="ACIT4910">
 		<booking>
 			<type type="Lecture"/>
@@ -31,7 +30,7 @@
 			<teacher teacher="Richard Chau"/>
 		</booking>
 	</course>
-        
+
 	<course course = "ACIT4770">
 		<booking>
 			<type type="Lab"/>
@@ -69,7 +68,7 @@
 			<day day = 'Tuesday'/>
 			<timeslot time="14:30"/>
 			<teacher teacher="Medhat Elmasry"/>
-		</booking>		
+		</booking>
 	</course>
 	<course course = "ACIT4620">
 		<booking>
@@ -102,7 +101,7 @@
 			<timeslot time="10:30"/>
 			<teacher teacher="Stephen Fabiszewski"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
@@ -153,7 +152,7 @@
 			<day day = 'Thursday'/>
 			<timeslot time="10:30"/>
 			<teacher teacher="James Parry"/>
-		</booking>	
+		</booking>
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-320"/>
