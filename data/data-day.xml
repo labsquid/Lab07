@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE timetable SYSTEM "template.dtd">
 <timetable>
 	<day day='Monday'>
 		<booking>
@@ -9,7 +8,7 @@
 			<timeslot time="13:30"/>
                         <teacher teacher="Trevor Lord"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
@@ -17,7 +16,7 @@
 			<timeslot time="15:30"/>
                         <teacher teacher="Richard Chau"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lecture"/>
 			<room room="SE6-205"/>
@@ -26,7 +25,7 @@
                         <teacher teacher="Medhat Elmasry"/>
 		</booking>
 	</day>
-	
+
 	<day day='Tuesday'>
 		<booking>
 			<type type="Lab"/>
@@ -35,7 +34,7 @@
 			<timeslot time="10:30"/>
                         <teacher teacher="Bethany Edmunds"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
@@ -43,7 +42,7 @@
 			<timeslot time="11:30"/>
                         <teacher teacher="Bethany Edmunds"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW9-206"/>
@@ -51,7 +50,7 @@
 			<timeslot time="12:30"/>
                         <teacher teacher="Medhat Elmasry"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
@@ -59,7 +58,7 @@
 			<timeslot time="13:30"/>
                         <teacher teacher="Medhat Elmasry"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
@@ -67,7 +66,7 @@
 			<timeslot time="14:30"/>
                         <teacher teacher="Medhat Elmasry"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW3-3615"/>
@@ -84,7 +83,7 @@
 			<timeslot time="10:30"/>
                         <teacher teacher="Stephen Fabiszewski"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-306"/>
@@ -92,7 +91,7 @@
 			<timeslot time="11:30"/>
                         <teacher teacher="Stephen Fabiszewski"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lecture"/>
 			<room room="SW3-1750"/>
@@ -116,7 +115,7 @@
 			<timeslot time="9:30"/>
                         <teacher teacher="Richard Chau"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-320"/>
@@ -124,7 +123,7 @@
 			<timeslot time="10:30"/>
                         <teacher teacher="James Parry"/>
 		</booking>
-		
+
 		<booking>
 			<type type="Lab"/>
 			<room room="SE12-320"/>
