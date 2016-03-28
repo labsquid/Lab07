@@ -8,7 +8,7 @@ class Timetable extends CI_Model {
 
 	public function __construct(){
 		$this->xml = simplexml_load_file("./data/data-all.xml");
-		foreach($this->xml->days->day as $day){
+		foreach($this->xml->xpath("day") as $day){
 			$dayName = $day['day']->__toString();
 			foreach($day->booking as $booking){
 				$tempBooking = new Booking();
@@ -21,7 +21,7 @@ class Timetable extends CI_Model {
 				$this->days[] = $tempBooking;
 			}
 		}
-		foreach($this->xml->courses->course as $course){
+		foreach($this->xml->xpath("course") as $course){
 			$courseName = $course['course']->__toString();
 			foreach($course->booking as $booking){
 				$tempBooking = new Booking();
@@ -35,7 +35,7 @@ class Timetable extends CI_Model {
 			}
 		}
 
-		foreach($this->xml->timeslots->timeslot as $timeslot){
+		foreach($this->xml->xpath("timeslot") as $timeslot){
 			$timeslotName = $timeslot['time']->__toString();
 			foreach($timeslot->booking as $booking){
 				$tempBooking = new Booking();
