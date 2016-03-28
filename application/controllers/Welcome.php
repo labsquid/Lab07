@@ -43,7 +43,102 @@ class Welcome extends Application {
 
 
 
+
+		
+		#Code for validation
+		
+		$xmlAll = new DOMDocument();
+		$xmlCourse = new DOMDocument();
+		$xmlDay = new DOMDocument();
+		$xmlTimeslot = new DOMDocument();
+		
+		$xmlAll->load("./data/data-all.xml");
+		$xmlCourse->load("./data/data-course.xml");
+		$xmlDay->load("./data/data-day.xml");
+		$xmlTimeslot->load("./data/data-timeslot.xml");
+		$schema = './data/template.xsd';
+
+		$validate = "<div>";
+		
+		libxml_use_internal_errors(true);
+		if($xmlAll->schemaValidate($schema)){
+			$validate .= "<div>data-all.xml is valid.</div>";
+		} else {
+			$validate .= "<div>data-all.xml is invalid.</div>";
+			$errs = libxml_get_errors();
+			foreach ($errs as $err){
+				$validate .= "<div>XML Error \"$err->message\" [Code $err->level] on line $err->line column $err->column" . "\n";
+			}
+			libxml_clear_errors();
+		}
+		
+		if($xmlCourse->schemaValidate($schema)){
+			$validate .= "<div>data-course.xml is valid.</div>";
+		} else {
+			$validate .= "<div>data-course.xml is invalid.</div>";
+			$errs = libxml_get_errors();
+			foreach ($errs as $err){
+				$validate .= "<div>XML Error \"$err->message\" [Code $err->level] on line $err->line column $err->column" . "\n";
+			}
+			libxml_clear_errors();
+		}
+		
+		if($xmlDay->schemaValidate($schema)){
+			$validate .= "<div>data-day.xml is valid.</div>";
+		} else {
+			$validate .= "<div>data-day.xml is invalid.</div>";
+			$errs = libxml_get_errors();
+			foreach ($errs as $err){
+				$validate .= "<div>XML Error \"$err->message\" [Code $err->level] on line $err->line column $err->column" . "\n";
+			}
+			libxml_clear_errors();
+		}
+		
+		if($xmlTimeslot->schemaValidate($schema)){
+			$validate .= "<div>data-timeslot.xml is valid.</div>";
+		} else {
+			$validate .= "<div>data-timeslot.xml is invalid.</div>";
+			$errs = libxml_get_errors();
+			foreach ($errs as $err){
+				$validate .= "<div>XML Error \"$err->message\" [Code $err->level] in $err->file on line $err->line column $err->column" . "\n";
+			}
+			libxml_clear_errors();
+		}
+		libxml_use_internal_errors(false);
+		
+		
+		
+		
+		
+		
+		/*
+		if($all_valid_xml == 1){
+			$validate .= "<div>data-all.xml validates</div>";
+		} else {
+			$validate .= "<div>data-all.xml doesn't validate</div>";
+		}
+		if($course_valid_xml == 1){
+			$validate .= "<div>data-course.xml validates</div>";
+		} else {
+			$validate .= "<div>data-course.xml doesn't validate</div>";
+		}
+		if($day_valid_xml == 1){
+			$validate .= "<div>data-day.xml validates</div>";
+		}
+		if($timeslot_valid_xml == 1){
+			$validate .= "<div>data-timeslot.xml validates</div>";
+		}
+		
+		
+		
+		libxml_clear_errors();
+		*/
+		$validate .= "</div>";
+		
+		##
+		
 		$this->data['xmldata'] = $display;
+		$this->data['validate'] = $validate;
 		$this->render();
 	}
 
@@ -113,6 +208,8 @@ class Welcome extends Application {
 			$this->data['xmldata'] = $display;
 			$this->render();
 		};
+		
+		
 		
 		
 		
