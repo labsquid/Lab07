@@ -23,6 +23,8 @@ class Welcome extends Application {
 		$this->data['pagebody'] = 'welcome_xml';
 		$this->load->model('timetable');
 		$display = "";
+		$test = $this->timetable->testXSL();
+		/*
 		$display .= "<div>By Days:";
 		foreach($this->timetable->getDays() as $key=>$item){
 			$display .= "<div>" . $item->toString() . "</div>";
@@ -40,18 +42,18 @@ class Welcome extends Application {
 			$display .= "<div>" . $item->toString() . "</div>";
 		}
 		$display .= "</div>";
+		*/
 
 
 
 
-		
 		#Code for validation
-		
+
 		$xmlAll = new DOMDocument();
 		$xmlCourse = new DOMDocument();
 		$xmlDay = new DOMDocument();
 		$xmlTimeslot = new DOMDocument();
-		
+
 		$xmlAll->load("./data/data-all.xml");
 		$xmlCourse->load("./data/data-course.xml");
 		$xmlDay->load("./data/data-day.xml");
@@ -59,7 +61,7 @@ class Welcome extends Application {
 		$schema = './data/template.xsd';
 
 		$validate = "<div>";
-		
+
 		libxml_use_internal_errors(true);
 		if($xmlAll->schemaValidate($schema)){
 			$validate .= "<div>data-all.xml is valid.</div>";
@@ -71,7 +73,7 @@ class Welcome extends Application {
 			}
 			libxml_clear_errors();
 		}
-		
+
 		if($xmlCourse->schemaValidate($schema)){
 			$validate .= "<div>data-course.xml is valid.</div>";
 		} else {
@@ -82,7 +84,7 @@ class Welcome extends Application {
 			}
 			libxml_clear_errors();
 		}
-		
+
 		if($xmlDay->schemaValidate($schema)){
 			$validate .= "<div>data-day.xml is valid.</div>";
 		} else {
@@ -93,7 +95,7 @@ class Welcome extends Application {
 			}
 			libxml_clear_errors();
 		}
-		
+
 		if($xmlTimeslot->schemaValidate($schema)){
 			$validate .= "<div>data-timeslot.xml is valid.</div>";
 		} else {
@@ -105,12 +107,12 @@ class Welcome extends Application {
 			libxml_clear_errors();
 		}
 		libxml_use_internal_errors(false);
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
 		/*
 		if($all_valid_xml == 1){
 			$validate .= "<div>data-all.xml validates</div>";
@@ -128,15 +130,15 @@ class Welcome extends Application {
 		if($timeslot_valid_xml == 1){
 			$validate .= "<div>data-timeslot.xml validates</div>";
 		}
-		
-		
-		
+
+
+
 		libxml_clear_errors();
 		*/
 		$validate .= "</div>";
-		
+
 		##
-		
+
 		$this->data['xmldata'] = $display;
 		$this->data['validate'] = $validate;
 		$this->render();
@@ -170,24 +172,24 @@ class Welcome extends Application {
 				$courseResult .= "<div>" . $item->toString() . "</div>";
 			}
 		}
-		
-		
+
+
 
 		//At this point, just need to do some comparisons and decide whether to
 		//print a single one (because they all match) or each invidually like/
 		//Course results are ___ day results are __ etc
 		// OR just show an error for no results
-		
-		
+
+
 
 
 		//Currently just checks and displays course results
 		if($courseResult == "" && $dayResult == "" && $timeslotResult == ""){
 			$courseResult = "<div>Sorry, there are no results for that day and timeslot.</div>";
-			
+
 			$display .= $courseResult;
 			$display .= "</div>";
-			
+
 			$this->data['xmldata'] = $display;
 			$this->render();
 		} elseif ($dayResult != $courseResult || $dayResult != $timeslotResult){
@@ -197,22 +199,22 @@ class Welcome extends Application {
 			$display .= $courseResult;
 			$display .= $dayResult;
 			$display .= $timeslotResult;
-			
+
 			$display .= "</div>";
-			
+
 			$this->data['xmldata'] = $display;
 			$this->render();
-		} else {		
-			$display .= $courseResult;		
-			$display .= "</div>";			
+		} else {
+			$display .= $courseResult;
+			$display .= "</div>";
 			$this->data['xmldata'] = $display;
 			$this->render();
 		};
-		
-		
-		
-		
-		
-	
+
+
+
+
+
+
 	}
 }

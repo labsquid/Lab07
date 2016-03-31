@@ -78,6 +78,19 @@ class Timetable extends CI_Model {
 		return $return;
 	}
 
+	public function testXSL(){
+		$xslDoc = new DOMDocument();
+	    $xslDoc->load("./data/xsl-day.xsl");
+
+	    $xmlDoc = new DOMDocument();
+	    $xmlDoc->load("./data/data-day.xml");
+
+	    $proc = new XSLTProcessor();
+	    $proc->importStylesheet($xslDoc);
+		var_dump($proc->transformToXML($xmlDoc));
+	    return $proc->transformToXML($xmlDoc);
+	}
+
 }
 
 class Booking {

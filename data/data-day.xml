@@ -6,7 +6,7 @@
 			<room room="SE12-306"/>
 			<course course="ACIT4770"/>
 			<timeslot time="13:30"/>
-                        <teacher teacher="Trevor Lord"/>
+            <teacher teacher="Trevor Lord"/>
 		</booking>
 
 		<booking>
@@ -14,7 +14,7 @@
 			<room room="SW9-206"/>
 			<course course="ACIT4910"/>
 			<timeslot time="15:30"/>
-                        <teacher teacher="Richard Chau"/>
+            <teacher teacher="Richard Chau"/>
 		</booking>
 
 		<booking>
