@@ -23,26 +23,15 @@ class Welcome extends Application {
 		$this->data['pagebody'] = 'welcome_xml';
 		$this->load->model('timetable');
 		$display = "";
-		$test = $this->timetable->testXSL();
-		/*
-		$display .= "<div>By Days:";
-		foreach($this->timetable->getDays() as $key=>$item){
-			$display .= "<div>" . $item->toString() . "</div>";
-		}
+		$xslDay = $this->timetable->getDayHTML();
+		$xslTimeslot = $this->timetable->getTimeslotHTML();
+
+		$display .= $xslDay;
+		$display .= $xslTimeslot;
+
+
 		$display .= "</div>";
 
-		$display .= "<div>By Course:";
-		foreach($this->timetable->getCourses() as $item){
-			$display .= "<div>" . $item->toString() . "</div>";
-		}
-		$display .= "</div>";
-
-		$display .= "<div>By Timeslot:";
-		foreach($this->timetable->getTimeslots() as $item){
-			$display .= "<div>" . $item->toString() . "</div>";
-		}
-		$display .= "</div>";
-		*/
 
 
 

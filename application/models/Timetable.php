@@ -78,7 +78,19 @@ class Timetable extends CI_Model {
 		return $return;
 	}
 
-	public function testXSL(){
+	public function getTimeslotHTML(){
+		$xslDoc = new DOMDocument();
+	    $xslDoc->load("./data/xsl-timeslot.xsl");
+
+	    $xmlDoc = new DOMDocument();
+	    $xmlDoc->load("./data/data-timeslot.xml");
+
+	    $proc = new XSLTProcessor();
+	    $proc->importStylesheet($xslDoc);
+	    return $proc->transformToXML($xmlDoc);
+	}
+
+	public function getDayHTML(){
 		$xslDoc = new DOMDocument();
 	    $xslDoc->load("./data/xsl-day.xsl");
 
@@ -87,10 +99,8 @@ class Timetable extends CI_Model {
 
 	    $proc = new XSLTProcessor();
 	    $proc->importStylesheet($xslDoc);
-		var_dump($proc->transformToXML($xmlDoc));
 	    return $proc->transformToXML($xmlDoc);
 	}
-
 }
 
 class Booking {

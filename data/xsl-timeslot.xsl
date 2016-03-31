@@ -18,9 +18,52 @@
                 <th>Thursday</th>
                 <th>Friday</th>
             </tr>
-            <xsl:for-each select="/schedule/origin/destination[@code='YYC']/flight">
-                <xsl:sort select="@arrive"/>
-                <xsl:call-template name="arrival_flight"/>
+            <xsl:for-each select="/timetable/timeslot">
+                <xsl:call-template name="timeslot_row"/>
             </xsl:for-each>
         </table>
     </xsl:template>
+    <xsl:template name="timeslot_row">
+            <tr>
+                <th>
+                    <xsl:value-of select="./@time" />
+                </th>
+                <td>
+                    <xsl:for-each select="./booking">
+                            <xsl:if test="./day/@day = 'Monday'">
+                                <xsl:value-of select="./course/@course" />
+                            </xsl:if>
+                    </xsl:for-each>
+                </td>
+                <td>
+                    <xsl:for-each select="./booking">
+                            <xsl:if test="./day/@day = 'Tuesday'">
+                                <xsl:value-of select="./course/@course" />
+                            </xsl:if>
+                    </xsl:for-each>
+                </td>
+                <td>
+                    <xsl:for-each select="./booking">
+                            <xsl:if test="./day/@day = 'Wednesday'">
+                                <xsl:value-of select="./course/@course" />
+                            </xsl:if>
+                    </xsl:for-each>
+                </td>
+                <td>
+                    <xsl:for-each select="./booking">
+                            <xsl:if test="./day/@day = 'Thursday'">
+                                <xsl:value-of select="./course/@course" />
+                            </xsl:if>
+                    </xsl:for-each>
+                </td>
+                <td>
+                    <xsl:for-each select="./booking">
+                            <xsl:if test="./day/@day = 'Friday'">
+                                <xsl:value-of select="./course/@course" />
+                            </xsl:if>
+                    </xsl:for-each>
+                </td>
+            
+            </tr>
+    </xsl:template>
+</xsl:stylesheet>
